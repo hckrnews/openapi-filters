@@ -1,0 +1,50 @@
+{
+  "name": "@hckrnews/openapi-filters",
+  "version": "0.1.0",
+  "description": "Create filters from OpenAPI spec",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint 'src/**/*.js'",
+    "lint:report": "eslint 'src/**/*.js' -f json -o report.json  --no-fix",
+    "lint:fix": "eslint 'src/**/*.js' --fix",
+    "test": "c8 node --test src",
+    "cpd": "node_modules/jscpd/bin/jscpd src",
+    "vulnerabilities": "npm audit --production"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hckrnews/openapi-filters.git"
+  },
+  "keywords": [
+    "openapi",
+    "filters"
+  ],
+  "author": {
+    "name": "Pieter Wigboldus",
+    "url": "https://www.gazelle.nl/"
+  },
+  "contributors": [
+    {
+      "name": "Pieter Wigboldus",
+      "email": "pieter.wigboldus@pon.com"
+    }
+  ],
+  "license": "LGPL-2.1",
+  "bugs": {
+    "url": "https://github.com/hckrnews/openapi-filters/issues"
+  },
+  "homepage": "https://github.com/hckrnews/openapi-filters#readme",
+  "devDependencies": {
+    "@hckrnews/eslint-config": "^3.0.0",
+    "c8": "^7.12.0",
+    "jscpd": "^3.5.3"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/w3nl"
+  }
+}

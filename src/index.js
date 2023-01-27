@@ -1,3 +1,6 @@
+import getStockFilters from './get-stock-filters.js';
+import { parseFilters } from './parse-filters.js';
+
 /**
  * @typedef {object} Filter
  * @property {any=} default
@@ -30,5 +33,8 @@
  * @property {object} responses
  */
 
-const getFilter = () => true;
-export { getFilter };
+const makeFilters = (openAPIspec) => {
+    const filters = getStockFilters({ endpoint: openAPIspec });
+    return (params) => parseFilters(params, filters);
+};
+export { makeFilters };

@@ -33,6 +33,12 @@ import { parseFilters } from './parse-filters.js';
  * @property {object} responses
  */
 
+/**
+ * Make the filters from an OpenAPI spec
+ *
+ * @param {Endpoint} openAPIspec
+ * @returns {object}
+ */
 const makeFilters = (openAPIspec) => {
     const filters = getStockFilters({ endpoint: openAPIspec });
     return (params) => parseFilters(params, filters);

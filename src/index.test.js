@@ -9,8 +9,8 @@ test('Test the OpenAPI filters', async (t) => {
         const params = {};
         const result = filters(params);
         const expectedResult = {
-            page: 1,
-            size: 42,
+            page: 0,
+            size: 10,
         };
 
         assert.deepEqual(result, expectedResult);

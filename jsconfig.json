@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
-    "checkJs": true
+    "checkJs": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "rootDirs": [
+        "src"
+    ],
+    "resolveJsonModule": true
   },
   "exclude": [
     "node_modules",

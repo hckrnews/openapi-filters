@@ -15,7 +15,7 @@ test('Get stock filters use case', async (t) => {
                     type: 'number',
                 },
                 {
-                    default: 42,
+                    default: 10,
                     name: 'size',
                     type: 'number',
                 },

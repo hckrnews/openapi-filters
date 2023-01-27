@@ -1,4 +1,5 @@
-const parseFilter = (value, filter) => value.valueOf() || filter.default;
+const parseFilter = (value, filter) =>
+    value ? value.valueOf() : filter.default;
 
 const parseFilters = (params, filters) =>
     Object.fromEntries(

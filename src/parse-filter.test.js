@@ -28,4 +28,27 @@ test('Parse filters use case', async (t) => {
 
         assert.deepEqual(result, expectedResult);
     });
+
+    await t.test('Test if it receive the default values', async () => {
+        const params = {};
+        const filters = [
+            {
+                default: 0,
+                name: 'page',
+                type: 'number',
+            },
+            {
+                default: 42,
+                name: 'size',
+                type: 'number',
+            },
+        ];
+        const result = parseFilters(params, filters);
+        const expectedResult = {
+            page: 0,
+            size: 42,
+        };
+
+        assert.deepEqual(result, expectedResult);
+    });
 });

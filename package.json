@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/hckrnews/openapi-filters#readme",
   "devDependencies": {
-    "@hckrnews/eslint-config": "^3.0.0",
+    "@hckrnews/eslint-config": "^3.0.5",
     "c8": "^8.0.0",
     "jscpd": "^3.5.3"
   },

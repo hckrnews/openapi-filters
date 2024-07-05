@@ -38,7 +38,7 @@
   "devDependencies": {
     "@hckrnews/eslint-config": "^3.0.5",
     "c8": "^8.0.0",
-    "jscpd": "^3.5.3"
+    "jscpd": "^4.0.0"
   },
   "engines": {
     "node": ">= 18"

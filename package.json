@@ -1,13 +1,13 @@
 {
   "name": "@hckrnews/openapi-filters",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Create filters from OpenAPI spec",
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint 'src/**/*.js'",
     "lint:report": "eslint 'src/**/*.js' -f json -o report.json  --no-fix",
     "lint:fix": "eslint 'src/**/*.js' --fix",
-    "test": "c8 node --test src",
+    "test": "c8 node --test",
     "cpd": "node_modules/jscpd/bin/jscpd src",
     "vulnerabilities": "npm audit --production"
   },
@@ -37,8 +37,8 @@
   "homepage": "https://github.com/hckrnews/openapi-filters#readme",
   "devDependencies": {
     "@hckrnews/eslint-config": "^3.0.5",
-    "c8": "^8.0.0",
-    "jscpd": "^3.5.3"
+    "c8": "^10.0.0",
+    "jscpd": "^4.0.0"
   },
   "engines": {
     "node": ">= 18"
